@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import './styles/index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-//import Header from './components/Header'
+import Header from './components/Header'
 /* import Survey from './pages/Survey'
 import Results from './pages/Results'
 import Freelances from './pages/Freelances'
@@ -12,7 +12,7 @@ import Error from './components/Error' */
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
 {/*         <Route path="/survey/:questionNumber" element={<Survey />} />
