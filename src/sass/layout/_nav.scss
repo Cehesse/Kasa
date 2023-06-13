@@ -1,0 +1,31 @@
+.nav-section{
+    @include flex(column,center,center);
+        &__nav-localisation {
+        @include flex(row,center,center);
+        width: 100%;
+        background-color: $color-bg-2;
+        padding: 16px 0;
+        column-gap: 8px;
+        }
+        &__nav-description {
+        @include flex(column,center,center);
+        width: 100%;
+        padding: 56px 24px;
+        background-color: $color-bg-1;
+        text-align: center;
+    }
+}
+
+.nav-localisation{
+    &__city{
+            font-weight: 500;
+        }
+}
+.nav-description{
+        &__title {
+        padding: 0 24px;
+    }
+        &__subtitle {
+        margin: 16px 0;
+    }
+}

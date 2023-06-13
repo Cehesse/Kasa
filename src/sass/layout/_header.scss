@@ -1,0 +1,13 @@
+.header-section{
+    @include flex(row,center,center);
+    width: 100%;
+    margin: 16px 0 8px 0;
+        img {
+        height: 44px;
+        width: 162px;
+        }
+        &__back {
+            position: absolute;
+            right: 92%;
+        }
+}

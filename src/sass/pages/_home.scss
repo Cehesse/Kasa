@@ -1,0 +1,46 @@
+.functioning-section{
+    @include flex(column,center,center);
+    padding: 48px 8%;
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        padding: 48px 13%;
+    }
+        &__functioning-title {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        &__functioning-step {
+            @include grid-repeat(3,1fr,1,1fr,center,center);
+            width: 100%;
+            @media screen and (min-width: map-get($breakpoints, mobile)){
+            @include flex(row,center,center);
+            column-gap: 4%;
+            }
+        }
+}
+
+.restaurant-section{
+    @include flex(column,center,center);
+    padding: 56px 8%;
+    background-color: $color-bg-1;
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        padding: 48px 13%;
+    }
+        &__restaurant-title {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        &__restaurant-cards {
+            @include grid-repeat(4,1fr,1,1fr,center,center);
+            row-gap: 16px;
+            width: 100%;
+            @media screen and (min-width: map-get($breakpoints, mobile)){
+            @include grid-repeat(2,1fr,2,1fr,center,center);
+            column-gap: 5%;
+            }
+            @media screen and (min-width: map-get($breakpoints, tablette)){
+            @include flex(row,flex-start,center);
+            column-gap: 5%;
+            overflow: scroll;
+            }
+        }
+}

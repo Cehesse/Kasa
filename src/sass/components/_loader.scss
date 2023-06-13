@@ -1,0 +1,47 @@
+.loader{
+    @include flex(row,center,center);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    animation: disappear 3s forwards;
+        & .fa-utensils{
+            position: absolute;
+            font-size: 80px;
+            background: $bg-color-effect;
+            background-clip: text;
+            color: transparent;
+        } 
+        & .circle-1{ 
+            @include circle(200px,200px,$color-primary);
+            animation: spin 2s infinite linear normal;
+        }
+        & .circle-2{ 
+            @include circle(250px,250px,$color-tertiary);
+            animation: spin 2s infinite ease-in-out reverse;
+        }
+        & .circle-3{ 
+            @include circle(300px,300px,$color-primary-light);
+            animation: spin 2s infinite linear normal;
+        }
+}
+
+@keyframes disappear {
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+    
