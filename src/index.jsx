@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './styles/main.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+import './sass/main.scss';
+
 import Home from './pages/Home'
 import Header from './components/Header'
 /* import Survey from './pages/Survey'
