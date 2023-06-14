@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
  
 function Header() {
     return (
-        <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/survey/1">Questionnaire</Link>
+        <nav className='header-section'>
+            <Link to="/" className='Link'>Acceuil</Link>
+            <Link to="/About" className='Link'>About</Link>
         </nav>
     )
 }
