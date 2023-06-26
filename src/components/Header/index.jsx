@@ -10,9 +10,9 @@ import Navbar from '../Navbar'
 //FCT
 export default function Header() {
 	return (
-		<nav className='header-section'>
+		<header className='header-section'>
 			<Link to="/"><img src={Logo} alt="Logo de KASA" /></Link>
 			<Navbar />
-		</nav>
+		</header>
 	)
 }

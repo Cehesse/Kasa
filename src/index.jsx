@@ -14,6 +14,7 @@ import Accomodation from './pages/Accommodation'
 
 //COMPONENTS
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 //ROUTE
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,7 @@ root.render(
         <Route path="/Accomodation/:Number" element={<Accomodation />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
+      <Footer />
       </div>
     </Router>
   </React.StrictMode>
