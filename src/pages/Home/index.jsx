@@ -1,19 +1,29 @@
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import Banner from '../../components/Banner'
+import Card from '../../components/Card'
+
+/* const reponse = await fetch("../datas/logements.json");
+const logement = reponse.json();
+console.log(logement); */
+
+import datas from '../../datas/logements'
 
 function Home() {
     return (
       <div className='pages'>
         <Banner />
       <div className='cards'>
-        <div className='card_location'>
-        <Link className='card_location__title'to="/Accomodation/1">Logement</Link>
-        </div>
-        <div className='card_location'>
-        <Link to='/Accomodation/2'>Logement 2</Link>
-        </div>
-      </div>
-        
+      {datas.map(data => {
+                return (
+                    <Card
+                        key={data.id}
+                        id={data.id}
+                        title={data.title}
+                        cover={data.cover}
+                    />
+                )
+            })}
+      </div> 
       </div>
     )
   }

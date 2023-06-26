@@ -6,12 +6,12 @@
 .cards{
     max-width: 1240px;
     width: 100%;
-    margin-top: 32px;
+    margin: 48px 0;
     background-color: $color-secondary;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 25px;
-    column-gap: 6.5%;
-    row-gap: 6.5%;
-    padding: 32px;
+    column-gap: 5%;
+    row-gap: 56px;
+    padding: 56px;
 }

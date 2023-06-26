@@ -1,9 +1,11 @@
-//FCT
-export default function Card({ photo, title }) {
+import { Link } from 'react-router-dom'
+
+export default function Card({id, title, cover}) {
+
 	return (
-		<article className='card'>
-			<img src={photo} alt='location' />
-			<h2 className='card__title'>{title}</h2>
-		</article>
-	);
+		<Link to={`/accomodation/${id}`} className="card-location">
+			<img src={cover} alt={title} />
+			<h2 className="card-location__title">{title}</h2>	
+		</Link>
+	)
 }
