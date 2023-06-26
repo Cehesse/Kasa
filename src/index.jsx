@@ -20,14 +20,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <div className='page'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Accomodation/:questionNumber" element={<Accomodation />} />
+        <Route path="/Accomodation/:Number" element={<Accomodation />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
+      </div>
     </Router>
-  </React.StrictMode>,
-  
+  </React.StrictMode>
 );

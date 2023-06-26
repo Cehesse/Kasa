@@ -1,17 +1,9 @@
 .header-section{
     @include flex(row,space-between,center);
     width: 100%;
-    margin: 16px 0 8px 0;
+    margin: 32px 0 32px 0;
         img {
-        height: 44px;
-        width: 162px;
+        height: 68px;
+        width: 210px;
         }
-        &__back {
-            position: absolute;
-            right: 92%;
-        }
-}
-
-.Link{
-    padding: 50px;
 }

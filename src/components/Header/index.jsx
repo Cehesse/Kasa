@@ -1,12 +1,18 @@
-import { Link } from 'react-router-dom'
- 
-function Header() {
-    return (
-        <nav className='header-section'>
-            <Link to="/" className='Link'>Acceuil</Link>
-            <Link to="/About" className='Link'>About</Link>
-        </nav>
-    )
-}
+//REACT
+import { Link } from "react-router-dom";
 
-export default Header
+//IMG
+import Logo from '../../assets/img/logo.png'
+
+//COMPONENTS
+import Navbar from '../Navbar'
+
+//FCT
+export default function Header() {
+	return (
+		<nav className='header-section'>
+			<Link to="/"><img src={Logo} alt="Logo de KASA" /></Link>
+			<Navbar />
+		</nav>
+	)
+}

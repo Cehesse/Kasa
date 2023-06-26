@@ -1,6 +1,6 @@
 .page{
     box-sizing: border-box;
-    min-width: 100%;
+    width: 1440px;
     padding: $padding-page-border;
 }
 
@@ -19,30 +19,3 @@ a{
     text-decoration: none;
     color: $color-black;
 }
-
-.push-to-right{
-    margin-right: auto;
-}
-
-@include bg-effect-icone-heart();
-
-//Barre de défilement autres que firefox
-*::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: $color-primary;
-    border-radius: 25px;
-}
-
-*::-webkit-scrollbar-track{
-    background: $color-primary-light;
-}
-
-//Barre de défilement firefox
-* {
-    scrollbar-color: $color-primary $color-primary-light;
-    scrollbar-width: auto;
-  }
