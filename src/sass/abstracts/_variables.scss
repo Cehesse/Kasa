@@ -3,20 +3,9 @@
 //Color
 
 $color-primary: #FF6060;
-$color-primary-light: hsla(267, 100%, 96%, 1); 
-$color-secondary:hsla(207, 100%, 20%, 1);
-$color-secondary-light: hsla(207, 92%, 76%, 1);
-$color-tertiary:hsla(317, 100%, 74%, 1);
-$color-secondary-light: hsla(207, 92%, 76%, 1);
-
-$color-green: hsla(165, 100%, 26%, 1);
-$color-green-light: hsla(165, 56%, 74%, 1);
-
 $color-white: hsl(0,0%,100%);
 $color-black: hsl(0,0%,0%);
-
-$color-bg-1: hsla(0, 0%, 97%, 1);
-$color-bg-2: hsla(0, 0%, 92%, 1);
+$color-bg-1: #F6F6F6;
 
 //Breakpoints map
 $breakpoints: (
@@ -34,4 +23,4 @@ $font-weight-medium: 500;
 $font-weight-normal: 300;
 
 //padding
-$padding-page-border: 0%
+$padding-page-border: 7%;

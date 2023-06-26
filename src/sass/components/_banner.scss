@@ -1,20 +1,15 @@
 .banner-section{
     @include flex(row,center,center);
-    width: 90%;
+    width: 100%;
     height: 224px;
     border-radius: 25px;
-    margin: 0 5%;
-    background-color: $color-black;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/banner.png');
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+
         &__title{
             position: absolute;
             color: $color-white;
             }
-        &__img{
-            width: 100%;
-            height: 224px;
-            border-radius: 25px;
-            object-fit: cover;
-            opacity: 30%;
-            }
-
 }

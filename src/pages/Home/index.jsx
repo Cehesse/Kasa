@@ -3,7 +3,7 @@ import Banner from '../../components/Banner'
 
 function Home() {
     return (
-      <div>
+      <div className='page'>
         <Banner />
         <Link to="/Accomodation/1">Logement</Link>
       </div>

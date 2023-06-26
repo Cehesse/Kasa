@@ -21,7 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <div className='page'>
+      <div className='App'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

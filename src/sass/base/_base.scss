@@ -1,7 +1,12 @@
-.page{
+#root{
+    @include flex(column,center,center);
     box-sizing: border-box;
-    max-width: 1440px;
-    padding: $padding-page-border;
+    padding: 0 $padding-page-border;
+}
+
+.App{
+    @include flex(column,center,center);
+    width: 100%;
 }
 
 *,
