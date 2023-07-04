@@ -1,24 +1,24 @@
 import Banner from '../../components/Banner'
-//import datas from '../../datas/logements'
+import Collapse from '../../components/Collapse';
+import datasAbout from '../../datas/about'
 
-function Home() {
+function About() {
     return (
       <div className='pages'>
         <Banner />
-{/*       <div className='cards'>
-      {datas.map(data => {
-                return (
-                    <Card
-                        key={data.id}
-                        id={data.id}
-                        title={data.title}
-                        cover={data.cover}
-                    />
-                )
-            })}
-      </div>  */}
+        <main className='collapses'>
+				{datasAbout.map(data => {
+					return (
+            <Collapse
+						  key={data.id}
+							title={data.aboutTitle} 
+              text={data.aboutText} 
+            />
+					)
+        })}
+			</main>
       </div>
     )
   }
 
-  export default Home
+  export default About

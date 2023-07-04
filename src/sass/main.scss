@@ -21,8 +21,10 @@
 // 5. Components
 @import
   "components/banner",
-  "components/_card";
+  "components/card",
+  "components/collapse";
 
 // 6. Page-specific styles
 @import
+  "pages/about",
   "pages/home";

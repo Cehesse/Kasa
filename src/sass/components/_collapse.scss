@@ -1,0 +1,38 @@
+.collapse{
+    @include flex(column,flex-start,flex-start);
+    &__title{
+        @include flex(row,space-between,center);
+        width: 100%;
+        background: $color-primary;
+        border-radius: 5px;
+        color: $color-white;
+        padding: 8px 16px;
+        }
+    &__text{
+        color: $color-primary;
+        background: $color-secondary;
+        padding: 16px 24px;
+        font-size: $font-size-medium;
+        animation: 0.2s ease-in-out 1 normal both collapse;
+            &--hidden{
+            visibility: hidden;
+            max-height: 0;
+            }
+        }
+    &__arrow--down{
+        transform: rotate(180deg);
+        }
+
+}
+
+@keyframes collapse {
+    0% {
+        opacity: 0.5;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
