@@ -1,14 +1,9 @@
-.banner-section{
-    @include flex(row,center,center);
-    width: 100%;
-    height: 224px;
-    border-radius: 25px;
+.banner-section--home{
+    @include banner-section;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/banner.png');
-    background-blend-mode: darken;
-    background-position: center;
-    background-repeat: no-repeat;
-        &__title{
-            position: absolute;
-            color: $color-white;
-            }
+}
+
+.banner-section--about{
+    @include banner-section;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/banner--about.png');
 }

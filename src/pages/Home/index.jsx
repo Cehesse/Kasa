@@ -1,17 +1,11 @@
-//import { Link } from 'react-router-dom'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
-
-/* const reponse = await fetch("../datas/logements.json");
-const logement = reponse.json();
-console.log(logement); */
-
 import datas from '../../datas/logements'
 
 function Home() {
     return (
       <div className='pages'>
-        <Banner />
+      <Banner title={"Chez vous, partout et ailleurs"}/>
       <div className='cards'>
       {datas.map(data => {
                 return (
