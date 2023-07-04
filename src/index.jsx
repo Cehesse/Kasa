@@ -8,7 +8,7 @@ import './sass/main.scss';
 
 //PAGES
 import Home from './pages/Home'
-import Error404 from './pages/404'
+import Error from './pages/404'
 import About from './pages/About'
 import Accomodation from './pages/Accommodation'
 
@@ -27,7 +27,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Accomodation/:Number" element={<Accomodation />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
       </div>

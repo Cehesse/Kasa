@@ -1,0 +1,22 @@
+.error{
+    @include flex(column,center,center);
+    max-width: 1240px;
+    width: 100%;
+    row-gap: 124px;
+    padding: 64px 0;
+    color: $color-primary;
+    &__title {
+        font-size: 288px;
+        font-weight: $font-weight-blod;
+    }
+    &__subtitle {
+        font-size: 36px;
+        font-weight: $font-weight-medium;
+    }
+    &__link-home {
+        text-decoration: underline solid $color-primary; 
+        color: $color-primary;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-medium;
+    }
+}
