@@ -15,7 +15,6 @@
         font-size: $font-size-medium;
         animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
             &--hidden{
-            animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
             visibility: hidden;
             height: 0;
             }

@@ -10,7 +10,7 @@ import './sass/main.scss';
 import Home from './pages/Home'
 import Error from './pages/404'
 import About from './pages/About'
-import Accomodation from './pages/Accommodation'
+import Accomodation from './pages/Accomodation'
 
 //COMPONENTS
 import Header from './components/Header'

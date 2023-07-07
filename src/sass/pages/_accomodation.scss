@@ -1,0 +1,5 @@
+.accomodation{
+    @include flex(column,center,center);
+    max-width: 1240px;
+    width: 100%;
+}

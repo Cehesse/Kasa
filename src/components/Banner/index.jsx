@@ -11,8 +11,8 @@ export default function Banner({title}) {
 	  },[]);
 
 	return (
-		<div className={aboutPage ? 'banner-section--about' : 'banner-section--home'}>
-			<h1 className={aboutPage ? 'banner-section--about__title' : 'banner-section--home__title'}>{title}</h1>
+		<div className={aboutPage ? 'banner-section banner-section--about' : 'banner-section banner-section--home'}>
+			<h1 className={'banner-section__title'}>{title}</h1>
 		</div>
 	);
 }
