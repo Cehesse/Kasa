@@ -16,7 +16,7 @@ export default function Carousel({slides}) {
 					src={arrowLeft}
 					alt="Fleche gauche"
 					onClick={prevSlide}
-					className="carousel__arrow"
+					className="carousel__arrow--left"
 				/>
 			)}
 			{slidesLength > 1 && (
@@ -24,7 +24,7 @@ export default function Carousel({slides}) {
 					src={arrowRight}
 					alt="Fleche droite"
 					onClick={nextSlide}
-					className="carousel__arrow"
+					className="carousel__arrow-right"
 				/>
 			)}
 			{slides.map((slide, index) => (

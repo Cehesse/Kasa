@@ -1,44 +1,38 @@
-.collapse{
-    @include flex(column,flex-start,flex-start);
-    &__title{
-        @include flex(row,space-between,center);
+.carousel{
+    @include flex(column,center,center);
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    margin-bottom: 40px;
+    &__img{
+        position: absolute;
+        height: 100%;
         width: 100%;
-        background: $color-primary;
-        border-radius: 5px;
-        color: $color-white;
-        padding: 8px 16px;
-        }
-    &__text{
-        color: $color-primary;
-        background: $color-secondary;
-        padding: 16px 24px;
-        font-size: $font-size-medium;
-        animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
-            &--hidden{
-            visibility: hidden;
-            height: 0;
+            & img{
+                height: 100%;
+                width: 100%;
+                border-radius: 25px;
+                object-fit: cover;
+                position: absolute;
             }
-        }
-    &__arrow--down{
-        transform: rotate(180deg);
-        }
-
-}
-
-@keyframes collapse {
-    0% {
-        opacity: 0;
-        transform: scaleY(0);
-        transform: translateY(-5%);
-        transform-origin: 0 0;
     }
-    75% {
-        transform: scaleY(0.5);
-        opacity: 0.5;
-        transform: translateY(0%);
-    }
-    100% {
-        transform: scaleY(1);
-        opacity: 1;
+    &__arrow--left{
+        position: absolute;
+        z-index: 1;
+        left: 2%;
+        top: 38%;
+        }
+    &__arrow-right{
+        position: absolute;
+        z-index: 1;
+        right: 2%;
+        top: 38%;
+        }
+    &__num{
+        position: absolute;
+        z-index: 1;
+        right: 50%;
+        top: 90%;
+        color: $color-white;
     }
 }
