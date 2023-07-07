@@ -1,7 +1,11 @@
-import arrowRight from '../../assets/img/arrowright.png'
-import arrowLeft from '../../assets/img/arrowleft.png'
-import { useState } from 'react'
+//REACT
+import { useState } from "react"
 
+//IMG
+import arrowRight from "../../assets/img/arrowright.png"
+import arrowLeft from "../../assets/img/arrowleft.png"
+
+//FCT
 export default function Carousel({slides}) {
 	const [ indexCurrent, setIndexCurrent] = useState(0);
 	const slidesLength = slides.length;
@@ -10,29 +14,15 @@ export default function Carousel({slides}) {
 	const prevSlide = () => {setIndexCurrent(indexCurrent === 0 ? slidesLength - 1 : indexCurrent - 1)};
 
 	return (
-		<section className="carousel">
-			{slidesLength > 1 && (
-				<img
-					src={arrowLeft}
-					alt="Fleche gauche"
-					onClick={prevSlide}
-					className="carousel__arrow--left"
-				/>
-			)}
-			{slidesLength > 1 && (
-				<img
-					src={arrowRight}
-					alt="Fleche droite"
-					onClick={nextSlide}
-					className="carousel__arrow-right"
-				/>
-			)}
+		<div className="carousel">
+			{slidesLength > 1 && ( <img src={arrowLeft} alt="Fleche gauche" onClick={prevSlide} className="carousel__arrow--left"/>)}
+			{slidesLength > 1 && (<img src={arrowRight} alt="Fleche droite" onClick={nextSlide} className="carousel__arrow-right"/>)}
 			{slides.map((slide, index) => (
 				<div key={index} className="carousel__img">
 					{index === indexCurrent && <img src={slide} alt="L'appartement" />}
 					{index === indexCurrent && slidesLength > 1 && <p className="carousel__num">{indexCurrent + 1}/{slidesLength}</p>}
 				</div>
 			))}
-		</section>
+		</div>
 	);
 };

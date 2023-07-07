@@ -1,5 +1,5 @@
 //REACT
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 //FCT
 export default function Banner({title}) {
@@ -7,12 +7,12 @@ export default function Banner({title}) {
 	const [aboutPage, setAboutPage] = useState(false);
 	
 	useEffect(() => {
-		if(window.location.pathname === '/about'){setAboutPage(true)};
+		if(window.location.pathname === "/about"){setAboutPage(true)};
 	  },[]);
 
 	return (
-		<div className={aboutPage ? 'banner-section banner-section--about' : 'banner-section banner-section--home'}>
-			<h1 className={'banner-section__title'}>{title}</h1>
+		<div className={aboutPage ? "banner-section banner-section--about" : "banner-section banner-section--home"}>
+			<h1 className={"banner-section__title"}>{title}</h1>
 		</div>
 	);
 }
