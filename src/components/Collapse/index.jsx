@@ -16,14 +16,14 @@ export default function Collapse({title, text}) {
                         alt="Flèche d'ouverture" 
                     />
                 </h2>
-                <p className={open ? 'collapse__text' : 'collapse__text--hidden'}>
+                <div className={open ? 'collapse__text' : 'collapse__text--hidden'}>
                     {Array.isArray(text) ? text.map((item, index) => {
                         return (
-                            <p key={index}>{item}</p>
+                            <p className='collapse__text--item'key={index} >{item}</p>
                         )
                     }) : text
                     }
-                </p> 
+                </div> 
             </div>
   	);
 }

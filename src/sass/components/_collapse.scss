@@ -9,15 +9,21 @@
         padding: 8px 16px;
         }
     &__text{
+        width: 100%;
         color: $color-primary;
         background: $color-secondary;
         padding: 16px 24px;
         font-size: $font-size-medium;
+        font-weight: $font-weight-medium;
         animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
             &--hidden{
             animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
             visibility: hidden;
             height: 0;
+            }
+            &--item{
+            font-size: $font-size-medium;
+            font-weight: $font-weight-medium;
             }
         }
     &__arrow--down{

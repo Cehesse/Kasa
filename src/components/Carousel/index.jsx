@@ -30,7 +30,7 @@ export default function Carousel({slides}) {
 			{slides.map((slide, index) => (
 				<div key={index} className="carousel__img">
 					{index === indexCurrent && <img src={slide} alt="L'appartement" />}
-					{index === indexCurrent && <p className="carousel__num">{indexCurrent + 1}/{slidesLength}</p>}
+					{index === indexCurrent && slidesLength > 1 && <p className="carousel__num">{indexCurrent + 1}/{slidesLength}</p>}
 				</div>
 			))}
 		</section>

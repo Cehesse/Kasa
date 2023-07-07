@@ -2,4 +2,81 @@
     @include flex(column,center,center);
     max-width: 1240px;
     width: 100%;
+    padding: 24px 0;
+    &__description{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: repeat(3, 1fr);
+        &__info{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &__title{
+            color: $color-primary;
+            font-size: 36px;
+            padding: 8px 0;
+        }
+        &__location{
+            color: $color-primary;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-medium;
+            padding: 8px 0;
+        }
+        &__host{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @include flex(row,flex-end,center);
+            column-gap: 16px;
+            & img{
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+            &__name{
+                color: $color-primary;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-medium;
+                max-width: 88px;
+                text-align: right;
+            }
+        }
+        &__tags{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding: 24px 0;
+            @include flex(row,flex-start,center);
+            flex-wrap: wrap;
+            column-gap: 8px;
+            row-gap: 8px;
+            & button{
+                color: $color-white;
+                background-color: $color-primary;
+                border: $color-primary;
+                border-radius: 10px;
+                padding: 4px 24px;
+                font-size: 14px;
+                font-weight: $font-weight-medium;
+            }
+        }
+        &__stars{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            @include flex(row,flex-end,center);
+            column-gap: 8px;
+        }
+        &__collapse--description{
+            justify-self: flex-start;
+            width: 95%;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        &__collapse--equipement{
+            justify-self: flex-end;
+            width: 95%;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    }
 }
