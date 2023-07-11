@@ -9,4 +9,12 @@
     column-gap: 5%;
     row-gap: 56px;
     padding: 56px;
+    @media screen and (max-width: map-get($breakpoints, tablette)){
+        }
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        background-color: $color-white;
+        margin: 24px 0;
+        padding: 0;
+        row-gap: 16px;
+            }
 }
