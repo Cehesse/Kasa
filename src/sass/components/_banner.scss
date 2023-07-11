@@ -3,13 +3,8 @@
     width: 100%;
     height: 224px;
     border-radius: 25px;
-    background-blend-mode: darken;
     background-position: center;
-    background-repeat: no-repeat;
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        @include flex(row,flex-start,center);
-        height: 111px;
-        }
+    background-size: cover;
     &__title{
         color: $color-white;
         @media screen and (max-width: map-get($breakpoints, tablette)){
@@ -23,9 +18,16 @@
     }
     &--home{
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/banner.png');
+        @media screen and (max-width: map-get($breakpoints, mobile)){
+            height: 111px;
+            @include flex(row,flex-start,center);
+        }
     }
     &--about{
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/banner--about.png');
+        @media screen and (max-width: map-get($breakpoints, mobile)){
+            height: 224px;
+            }
     }
 
 }
